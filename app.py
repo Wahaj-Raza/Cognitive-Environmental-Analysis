@@ -3,9 +3,20 @@ import joblib
 import pandas as pd
 
 # Load saved models and encoders
-label_encoders = joblib.load('label_encoders.joblib')
-preprocessing_pipeline = joblib.load('preprocessing_pipeline.joblib')
-stacking_clf = joblib.load('stacking_clf.joblib')
+import pickle
+
+# Load label encoders
+with open('label_encoders.pkl', 'rb') as f:
+    label_encoders = pickle.load(f)
+
+# Load preprocessing pipeline
+with open('preprocessing_pipeline.pkl', 'rb') as f:
+    preprocessing_pipeline = pickle.load(f)
+
+# Load stacking classifier
+with open('stacking_clf.pkl', 'rb') as f:
+    stacking_clf = pickle.load(f)
+
 
 # Function to preprocess input data
 def preprocess_input(data):
