@@ -52,7 +52,7 @@ def main():
     
     # Sidebar with app description
     st.sidebar.markdown('This app predicts whether a student will pass or fail based on their demographics and educational background.')
-    st.sidebar.markdown('Input your information on the left and click **Predict**.')
+    st.sidebar.markdown('Input your information on the right and click **Predict**.')
     
     # Input fields for user
     col1, col2 = st.columns([1, 2])
