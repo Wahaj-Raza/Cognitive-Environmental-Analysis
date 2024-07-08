@@ -45,6 +45,7 @@ def predict(data):
 
 # Streamlit app
 def main():
+    st.set_page_config(page_title="Cognitive Student Grade Prediction App")
     # Page title and description
     st.title('Cognitive Environmental Analysis Student Grade Prediction App')
     st.markdown('### Predict if you will Pass or Fail based on your inputs')
