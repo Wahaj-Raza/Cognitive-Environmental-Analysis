@@ -80,9 +80,9 @@ def main():
         
         prediction = predict(user_input)
         if prediction == "Pass":
-            st.success('Congratulations! You have passed.')
+            st.success('Congratulations! you are likely to PASS.')
         else:
-            st.error('Sorry, you have failed.')
+            st.error('Sorry, you are likely to FAIL')
     
     # Footer with team members and roll numbers
     st.markdown("---")
